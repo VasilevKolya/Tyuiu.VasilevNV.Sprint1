@@ -15,4 +15,4 @@ namespace Tyuiu.VasilevNV.Sprint1.Task1.V18.Test
             Assert.AreEqual(-1, res);
         }
     }
-}
+} 
