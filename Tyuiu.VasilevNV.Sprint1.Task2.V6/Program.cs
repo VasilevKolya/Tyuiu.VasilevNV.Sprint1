@@ -27,14 +27,13 @@ namespace Tyuiu.VasilevNV.Sprint1.V0
             Console.WriteLine("Введите расстояние в метрах:");
             x = Convert.ToInt16(Console.ReadLine());
 
-            double kilometers = x / 1000.0;
-
+            double kilometers = ds.ConvertMToKm(x);
             double roundedKilometers = Math.Round(kilometers, 3);
+
 
             Console.WriteLine("*************************************************************************");
             Console.WriteLine(" РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("*************************************************************************");
-
             Console.WriteLine($"Расстояние в километрах: {roundedKilometers}");
 
             Console.ReadLine();

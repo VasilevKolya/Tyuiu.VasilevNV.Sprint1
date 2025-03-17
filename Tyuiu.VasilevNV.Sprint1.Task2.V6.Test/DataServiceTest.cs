@@ -9,9 +9,9 @@ namespace Tyuiu.VasilevNV.Sprint1.Task2.V6.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int x = 2;
+            int x = 6;
             var res = ds.ConvertMToKm(x);
-            Assert.AreEqual(3.000, res);
+            Assert.AreEqual(0.006, res);
         }
     }
 }

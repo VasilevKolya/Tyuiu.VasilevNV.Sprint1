@@ -4,9 +4,9 @@ namespace Tyuiu.VasilevNV.Sprint1.Task2.V6.Lib
 {
     public class DataService : ISprint1Task2V6
     {
-        public double ConvertMToKm(int value)
+        public double ConvertMToKm(int x)
         {
-            return value;
+            return x / 1000.0;
         }
     }
 }
