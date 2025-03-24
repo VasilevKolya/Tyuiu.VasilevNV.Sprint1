@@ -8,7 +8,7 @@ namespace Tyuiu.VasilevNV.Sprint1.Task7.V3.Lib
         public double Calculate(double x, double y)
         {
             double z = (3 + Math.Exp(y - 1)) / (1 + Math.Pow(x, 2) * Math.Abs(y - Math.Tan(x)));
-            return z;
+            return Math.Round(z, 3);
 
         }
     }
