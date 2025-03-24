@@ -25,14 +25,16 @@ class Program
         double x, y;
 
         Console.WriteLine("Введите значение X:");
-        x = Convert.ToDouble(Console.ReadLine());
+        x = Convert.ToDouble(Console.ReadLine());     
         Console.WriteLine("Введите значение Y:");
         y = Convert.ToDouble(Console.ReadLine());
-        double res = ds.Calculate(x, y);
-        Console.WriteLine($"* Результат: z = {res,-43:F3} *");
 
-        
-        
+        Console.WriteLine("*************************************************************************");
+        Console.WriteLine(" РЕЗУЛЬТАТ:                                                             *");
+        Console.WriteLine("*************************************************************************");
+
+        double z = (ds.Calculate(x,y));
+        Console.WriteLine(Math.Round(z, 3));
 
         Console.ReadKey();
     }
